@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DerekMSMYT Studios!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="logo.png" alt="DerekMSMYT Studios!" class="logo">
+
+    <div class="buttons-wrapper">
+        <div class="container-left">
+            <a class="button" href="https://discord.gg/ffrwC8F6ax">Discord</a>
+            <a class="button" href="https://github.com/DerekMSMYT-Studios">Github</a>
+        </div>
+        <div class="container-right">
+            <a class="button" href="portal.html">Portal</a>
+            <a href="mailto:derekmsmyt@gmail.com" class="button">Contact</a>
+        </div>
+    </div>
+
+    <div class="container-bottom-center">
+        <a>© 2025 DerekMSMYT Studios</a>
+    </div>
+
+    <script>
+        const body = document.body;
+
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                body.classList.add('effect-active');
+            });
+            button.addEventListener('mouseleave', () => {
+                body.classList.remove('effect-active');
+            });
+        });
+    </script>
+</body>
+</html>
